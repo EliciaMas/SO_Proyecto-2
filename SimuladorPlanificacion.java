@@ -60,7 +60,7 @@ public class SimuladorPlanificacion extends JFrame {
 
         panel.add(panelEntrada, BorderLayout.NORTH);
 
-        // Tablas
+              // Tablas
         modeloCola = new DefaultTableModel(new String[]{"PID", "Nombre", "Tiempo CPU", "Llegada", "Quantum Restante"}, 0);
         colaProcesosTable = new JTable(modeloCola);
         modeloHistorial = new DefaultTableModel(new String[]{"PID", "Nombre", "Tiempo Ejecutado"}, 0);
@@ -107,7 +107,6 @@ public class SimuladorPlanificacion extends JFrame {
             JOptionPane.showMessageDialog(this, "Historial y cola de procesos limpiados.");
         });
     }
-
     private void agregarProceso() {
         try {
             String nombre = txtNombre.getText().trim();
@@ -314,3 +313,4 @@ public class SimuladorPlanificacion extends JFrame {
         });
     }
 }
+
